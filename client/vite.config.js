@@ -13,5 +13,9 @@ export default defineConfig({
         alias: {
             '@': path.resolve(__dirname, './')
         }
+    },
+    json: {
+        namedExports: true, // Allows named exports if needed
+        stringify: true // Enables JSON to be treated as a module
     }
 })
